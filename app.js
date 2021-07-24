@@ -3,14 +3,16 @@
       "esri/Map",
       "esri/views/MapView",
       "esri/layers/FeatureLayer",
-      "esri/widgets/Search"
+      "esri/widgets/Search",
+      "esri/widgets/Expand"
     ], 
     function (
       esriConfig,
       Map, 
       MapView, 
       FeatureLayer,
-      Search) {
+      Search,
+      Expand) {
 
       esriConfig.apiKey = "AAPKb9becb95935d4788b35eeba2a1f68e65pLS6pnpLbXOpyzu2WDMoLSqM-ITUCqIMhZ6ySKICKiEuVKdMACfrueVJp_xKC2_X";
 
@@ -33,5 +35,15 @@
 
       const search = new Search();
       view.ui.add(search, "top-right");
+
+      const li = document.createElement("div")
+      li.id = "listDiv"
+
+      const listExpand = new Expand({
+        expandIconClass: "esri-icon-layer-list",
+        content: li
+      });
+      view.ui.add(listExpand, "top-left");
+      
     });
 

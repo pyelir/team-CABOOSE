@@ -33,3 +33,15 @@ nav div:hover{
   cursor: pointer;
   background-color: royalblue;
 }
+
+#listDiv{
+  margin: 0;
+      padding: 0;
+      overflow: scroll;
+      background-color: #fff;
+      height: 500px;
+      width: 300px;
+      border: 10;
+      border-color: black;
+      border: 1px solid lightgray;
+}
