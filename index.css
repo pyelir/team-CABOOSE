@@ -10,5 +10,26 @@ body{
   padding: 0%;
   margin: 0%;
   width: 100%;
-  height: 100%;
+  height: 94%;
+}
+
+nav{
+  margin: 0%;
+  padding: 0%;
+  height: 6%;
+  width: 100%;
+  background-color: cornflowerblue;
+}
+
+nav div{
+  padding: 13px;
+  width: 50px;
+  text-align: center;
+  float: left;
+  margin: 1px;
+}
+
+nav div:hover{
+  cursor: pointer;
+  background-color: royalblue;
 }
