@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Air Quality Map</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/themes/light/main.css" />
+  <script src="https://js.arcgis.com/4.18/"></script>
+
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0%;
+      margin: 0%;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+  <script>
+    require([
+      "esri/config",
+      "esri/Map",
+      "esri/views/MapView",
+    ], function (esriConfig, Map, MapView) {
+
+      esriConfig.apiKey = "AAPKb9becb95935d4788b35eeba2a1f68e65pLS6pnpLbXOpyzu2WDMoLSqM-ITUCqIMhZ6ySKICKiEuVKdMACfrueVJp_xKC2_X";
+
+      var map = new Map({
+        basemap: "arcgis-topographic",
+      });
+
+      var view = new MapView({
+        container: "viewDiv",
+        map: map,
+        center: [-118.2437, 34.0522],
+        zoom: 10
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+</body>
+</html>
