@@ -35,6 +35,7 @@ nav div:hover{
 }
 
 #listDiv{
+  background-color: black;
   margin: 0;
       padding: 0;
       overflow: scroll;
@@ -44,4 +45,17 @@ nav div:hover{
       border: 10;
       border-color: black;
       border: 1px solid lightgray;
+}
+
+.block{
+  background-color: black;
+  color: white;
+  padding: 15px;
+  width: auto;
+  height: auto;
+}
+
+.block:hover{
+  background-color: gray;
+  cursor: pointer;
 }
